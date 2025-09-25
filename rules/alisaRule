@@ -1,0 +1,73 @@
+import ifcopenshell as ifc
+import ifcopenshell.util.classification
+
+def count_classification_ref(ifc_path):
+    model = ifc.open(ifc_path)
+    count_with = 0
+    count_without = 0
+    for element in model:
+        references = ifcopenshell.util.classification.get_references(element)
+        if references:   
+            for reference in references:
+                system = ifcopenshell.util.classification.get_classification(reference)
+                if system:
+                    count_with += 1
+                else:
+                    count_without += 1
+        else:
+            count_without += 1
+    print(f'Amount of elements with classification: {count_with}')
+    print(f'Amount of elements without classification: {count_without}')
+    return count_with, count_without
+
+
+def count_ifc_types(ifc_path):
+    model = ifc.open(ifc_path)
+    ifc_type_list = {"typer"}
+    for element in model:
+        ifc_type_list.add(element.is_a())
+    
+    print(f"Unique IFC types in the model: ")
+    print(*ifc_type_list, sep="\n")
+
+
+
+ifc_path = '/Users/alisatellefsen/Library/CloudStorage/OneDrive-DanmarksTekniskeUniversitet/DTU/Kandidat/2. Sem/41934 Advanced BIM/openBIM2025/25-16-D-ARCH.ifc'
+
+#count_classification_ref(ifc_path, "IfcSpace")
+count_ifc_types(ifc_path)
+
+""" model = ifc.open(ifc_path)
+
+classifications = model.by_type("IfcClassification")
+print("Classifications:", classifications)
+
+
+building = model.by_type('IfcBuilding')
+floors = model.by_type('IfcBuildingStorey')
+beams = model.by_type('IfcBeam')
+space = model.by_type('IfcSpace')
+#deck = model.by_type('Ifcdeck')
+print(beams[0])
+
+print(len(beams))
+
+beam0 = model.by_id(14742)
+print(beam0)
+
+element = model.by_type('IfcElement')
+print(element) """
+
+""" for i in range(3):
+    if i == 1:
+        continue
+    print(i) """
+
+
+
+#references = ifcopenshell.util.classification.get_references(element)
+
+#for i in references:
+    #system = ifcopenshell.util.classification.get_classification(i)
+    #print("This reference is part of the system", system.Name)
+    #print("The element has a classification reference of", i.Identification)
