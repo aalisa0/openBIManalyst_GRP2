@@ -30,12 +30,15 @@ def count_ifc_types(ifc_path):
     print(f"Unique IFC types in the model: ")
     print(*ifc_type_list, sep="\n")
 
-
+def test_types(ifc_path):
+    model = ifc.open(ifc_path)
 
 ifc_path = '/Users/alisatellefsen/Library/CloudStorage/OneDrive-DanmarksTekniskeUniversitet/DTU/Kandidat/2. Sem/41934 Advanced BIM/openBIM2025/25-16-D-ARCH.ifc'
 
-#count_classification_ref(ifc_path, "IfcSpace")
-count_ifc_types(ifc_path)
+#count_classification_ref(ifc_path)
+#count_ifc_types(ifc_path)
+test_types(ifc_path)
+
 
 """ model = ifc.open(ifc_path)
 
