@@ -1,11 +1,36 @@
 import ifcopenshell as ifc
 import ifcopenshell.util.classification
+import ifcopenshell.util.selector
 
-def count_classification_ref(ifc_path):
+#this func. finds all the IFC types in the model
+#the file's path needs to replace the 'ifc_path'
+ifc_path = '/Users/alisatellefsen/Library/CloudStorage/OneDrive-DanmarksTekniskeUniversitet/DTU/Kandidat/2. Sem/41934 Advanced BIM/openBIManalyst_GRP2/25-16-D-ARCH.ifc'
+
+#this fun. finds all the unique ifc types
+def unique_ifc_types(ifc_path):
+    model = ifc.open(ifc_path)
+    ifc_type_list = {"typer"}
+    #loop over all the elements to find all the unique ifc types
+    for element in model:
+        ifc_type_list.add(element.is_a())
+    #printing the types in the terminal 
+    print(f"Unique IFC types in the model: ")
+    print(*ifc_type_list, sep="\n")
+    return ifc_type_list
+
+#this func. checks for classifications
+def count_classification_ref(ifc_path, ifc_type_list):
     model = ifc.open(ifc_path)
     count_with = 0
     count_without = 0
-    for element in model:
+    #here you need to write which ifc_type you want to be checked in the terminal
+    ifc_type = ""
+    while ifc_type not in ifc_type_list:
+        ifc_type = input("What type do you want classifications from? (Maybe it didn't exist)\n")
+
+    element_list = model.by_type(ifc_type)
+    #only then will it find classifications
+    for element in element_list:
         references = ifcopenshell.util.classification.get_references(element)
         if references:   
             for reference in references:
@@ -21,56 +46,37 @@ def count_classification_ref(ifc_path):
     return count_with, count_without
 
 
-def count_ifc_types(ifc_path):
+#this func. looks for desks in the model, but with a location filter
+def look_for_desks(ifc_path):
     model = ifc.open(ifc_path)
-    ifc_type_list = {"typer"}
-    for element in model:
-        ifc_type_list.add(element.is_a())
-    
-    print(f"Unique IFC types in the model: ")
-    print(*ifc_type_list, sep="\n")
-
-def test_types(ifc_path):
-    model = ifc.open(ifc_path)
-
-ifc_path = '/Users/alisatellefsen/Library/CloudStorage/OneDrive-DanmarksTekniskeUniversitet/DTU/Kandidat/2. Sem/41934 Advanced BIM/openBIM2025/25-16-D-ARCH.ifc'
-
-#count_classification_ref(ifc_path)
-#count_ifc_types(ifc_path)
-test_types(ifc_path)
+    lv_1_desks = ifcopenshell.util.selector.filter_elements(model, 'Name=/.*Desk.*/, location="Level 1"')
+    lv_2_desks = ifcopenshell.util.selector.filter_elements(model, 'Name=/.*Desk.*/, location="Level 2"')
+    lv_3_desks = ifcopenshell.util.selector.filter_elements(model, 'Name=/.*Desk.*/, location="Level 3"')
+    lv_4_desks = ifcopenshell.util.selector.filter_elements(model, 'Name=/.*Desk.*/, location="Level 4"')
+    #check what we have filtered 
+    #print(*lv_1_desks, sep="\n")
+    print(f"No. desks lv_1 - lv_4: {len(lv_1_desks), len(lv_2_desks), len(lv_3_desks), len(lv_4_desks)}")
+    lv_basement_bicycle = ifcopenshell.util.selector.filter_elements(model, 'Name=/.*enkelzijdig.*/, location="Level -1"')
+    lv_0_bicycle = ifcopenshell.util.selector.filter_elements(model, 'Name=/.*enkelzijdig.*/, location="Level 0"')
 
 
-""" model = ifc.open(ifc_path)
-
-classifications = model.by_type("IfcClassification")
-print("Classifications:", classifications)
-
-
-building = model.by_type('IfcBuilding')
-floors = model.by_type('IfcBuildingStorey')
-beams = model.by_type('IfcBeam')
-space = model.by_type('IfcSpace')
-#deck = model.by_type('Ifcdeck')
-print(beams[0])
-
-print(len(beams))
-
-beam0 = model.by_id(14742)
-print(beam0)
-
-element = model.by_type('IfcElement')
-print(element) """
-
-""" for i in range(3):
-    if i == 1:
-        continue
-    print(i) """
+#this func. looks for bicycles in the model, even though they fall outside of the location filter
+def look_for_bicycles(ifc_path):
+    storeys = model.by_type("IfcBuildingStorey")
+    for s in storeys:
+        contained = []
+        for rel in getattr(s, "ContainsElements", []):
+            for i in rel.RelatedElements:
+                if "enkelzijdig" in i.Name or "Enkelzijdig" in i.Name:
+                    contained.append(i)
+            #contained.extend(rel.RelatedElements or [])
+        print(s.Name, "→", len(contained), "elements")
 
 
 
-#references = ifcopenshell.util.classification.get_references(element)
-
-#for i in references:
-    #system = ifcopenshell.util.classification.get_classification(i)
-    #print("This reference is part of the system", system.Name)
-    #print("The element has a classification reference of", i.Identification)
+#run the funcs. 
+#ifc_type_list = unique_ifc_types(ifc_path)
+#count_classification_ref(ifc_path, ifc_type_list)
+#look_for_desks(ifc_path)
+#look_for_bicycles(ifc_path)
+#
