@@ -41,9 +41,9 @@ def count_classification_ref(ifc_path, ifc_type_list):
                     count_without += 1
         else:
             count_without += 1
-    print(f'Amount of elements with classification: {count_with}')
-    print(f'Amount of elements without classification: {count_without}')
-    return count_with, count_without
+    e_with = f'Amount of elements with classification: {count_with}'
+    e_without = f'Amount of elements without classification: {count_without}'
+    return e_with, e_without
 
 
 #this func. looks for desks in the model, but with a location filter
@@ -55,14 +55,15 @@ def look_for_desks(ifc_path):
     lv_4_desks = ifcopenshell.util.selector.filter_elements(model, 'Name=/.*Desk.*/, location="Level 4"')
     #check what we have filtered 
     #print(*lv_1_desks, sep="\n")
-    print(f"No. desks lv_1 - lv_4: {len(lv_1_desks), len(lv_2_desks), len(lv_3_desks), len(lv_4_desks)}")
-    lv_basement_bicycle = ifcopenshell.util.selector.filter_elements(model, 'Name=/.*enkelzijdig.*/, location="Level -1"')
-    lv_0_bicycle = ifcopenshell.util.selector.filter_elements(model, 'Name=/.*enkelzijdig.*/, location="Level 0"')
+    desk_lvs = f"No. desks lv_1 - lv_4: {len(lv_1_desks), len(lv_2_desks), len(lv_3_desks), len(lv_4_desks)}"
+    return desk_lvs
 
 
 #this func. looks for bicycles in the model, even though they fall outside of the location filter
 def look_for_bicycles(ifc_path):
+    model = ifc.open(ifc_path)
     storeys = model.by_type("IfcBuildingStorey")
+    list_lv_bicycle = []
     for s in storeys:
         contained = []
         for rel in getattr(s, "ContainsElements", []):
@@ -71,12 +72,28 @@ def look_for_bicycles(ifc_path):
                     contained.append(i)
             #contained.extend(rel.RelatedElements or [])
         print(s.Name, "→", len(contained), "elements")
-
+        list_lv_bicycle.append(f"{s.Name} → {len(contained)} elements")
+    return list_lv_bicycle
 
 
 #run the funcs. 
-#ifc_type_list = unique_ifc_types(ifc_path)
-#count_classification_ref(ifc_path, ifc_type_list)
-#look_for_desks(ifc_path)
-#look_for_bicycles(ifc_path)
-#
+ifc_type_list = unique_ifc_types(ifc_path)
+ifc_class_list =count_classification_ref(ifc_path, ifc_type_list)
+ifc_find_desks = look_for_desks(ifc_path)
+ifc_find_bicycles = look_for_bicycles(ifc_path)
+
+with open("A1_analyst_checks_GRP2.txt", "w") as f:
+  f.write("Here are the elements w/w.o. classifications\n")
+  f.write(ifc_class_list[0])
+  f.write("\n")
+  f.write(ifc_class_list[1])
+  f.write("\n")
+  f.write("Here are no of desks per storey")
+  f.write("\n")
+  f.write(ifc_find_desks)
+  f.write("\n")
+  f.write("Here are the bicycle stands per storey. There are 6 stands per unit.")
+  f.write("\n")
+  for i in ifc_find_bicycles:
+    f.write(i)
+    f.write("\n")
