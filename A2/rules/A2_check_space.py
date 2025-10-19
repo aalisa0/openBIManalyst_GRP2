@@ -67,12 +67,12 @@ with open("A2/A2_analyst_checks_GRP2.txt", "w") as f:
             #There is a desk length in the name of the element though
             desk_length = dimensions.get('Length', 'N/A')
 
-            f.write(f"  - Height: {height}\n")
-            f.write(f"  - Area: {floor_area}\n")
+            f.write(f"  - Height: {round(height*pow(10, -3),2)} m\n")
+            f.write(f"  - Area: {round(floor_area,2)} m2\n")
             f.write(f"  - Volume per desk: {round(volume_per_desk* pow(10, -3), 2)} m3\n")
-            f.write(f"  - Area per desk: {floor_area_desk}\n")
-            f.write(f"  - Length of desk: {desk_length}\n")
-        
+            f.write(f"  - Area per desk: {round(floor_area_desk,2)} m2\n")
+            f.write(f"  - Length of desk: {desk_length} mm\n")
+
         else:
             f.write("  - No Dimensions Pset found.\n")
 

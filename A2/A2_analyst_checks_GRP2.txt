@@ -2,365 +2,365 @@ I have analysed desks in the office spaces in the ifc model.
 I have done so in accordance to 'Arbejdstilsynet' the governmental body regulating working spaces.
 
 Space: Office:1158149
-  - Height: 2800.0
-  - Area: 35.30474999999997
+  - Height: 2.8 m
+  - Area: 35.3 m2
   - Volume per desk: 16.48 m3
-  - Area per desk: 5.884124999999995
-  - Length of desk: N/A
+  - Area per desk: 5.88 m2
+  - Length of desk: N/A mm
 
 Space: Office:1158167
-  - Height: 2800.0
-  - Area: 26.939249999999873
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999968
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1158170
-  - Height: 2800.0
-  - Area: 26.93924999999998
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999995
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1216965
-  - Height: 2799.999999999999
-  - Area: 17.199749999999938
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.599874999999969
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1216973
-  - Height: 2799.999999999999
-  - Area: 35.30474999999993
+  - Height: 2.8 m
+  - Area: 35.3 m2
   - Volume per desk: 16.48 m3
-  - Area per desk: 5.884124999999988
-  - Length of desk: N/A
+  - Area per desk: 5.88 m2
+  - Length of desk: N/A mm
 
 Space: Office:1216985
-  - Height: 2799.999999999999
-  - Area: 17.19975000000019
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.599875000000095
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1216988
-  - Height: 2799.999999999999
-  - Area: 17.19974999999981
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.599874999999905
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1216991
-  - Height: 2799.999999999999
-  - Area: 17.199749999999852
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.599874999999926
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1216994
-  - Height: 2799.999999999999
-  - Area: 35.30475000000001
+  - Height: 2.8 m
+  - Area: 35.3 m2
   - Volume per desk: 16.48 m3
-  - Area per desk: 5.884125000000002
-  - Length of desk: N/A
+  - Area per desk: 5.88 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217012
-  - Height: 2799.999999999999
-  - Area: 13.124249999999963
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124249999999963
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217015
-  - Height: 2799.999999999999
-  - Area: 13.12424999999988
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.12424999999988
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217018
-  - Height: 2799.999999999999
-  - Area: 13.124250000000048
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124250000000048
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217021
-  - Height: 2799.999999999999
-  - Area: 13.124249999999794
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124249999999794
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217024
-  - Height: 2799.999999999999
-  - Area: 13.12424999999992
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.12424999999992
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217027
-  - Height: 2799.999999999999
-  - Area: 13.124249999999984
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124249999999984
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217030
-  - Height: 2799.999999999999
-  - Area: 13.124249999999941
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124249999999941
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217033
-  - Height: 2799.999999999999
-  - Area: 13.124249999999963
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124249999999963
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217045
-  - Height: 2799.999999999999
-  - Area: 13.124249999999899
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124249999999899
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217048
-  - Height: 2799.999999999999
-  - Area: 13.124249999999963
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124249999999963
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217084
-  - Height: 2799.999999999999
-  - Area: 17.199749999999863
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.599874999999932
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217087
-  - Height: 2799.999999999999
-  - Area: 17.199749999999977
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.599874999999988
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217096
-  - Height: 2799.999999999999
-  - Area: 17.199749999999895
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.599874999999948
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217102
-  - Height: 2799.999999999999
-  - Area: 35.304749999999615
+  - Height: 2.8 m
+  - Area: 35.3 m2
   - Volume per desk: 16.48 m3
-  - Area per desk: 5.884124999999936
-  - Length of desk: N/A
+  - Area per desk: 5.88 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217105
-  - Height: 2799.999999999999
-  - Area: 35.30475000000007
+  - Height: 2.8 m
+  - Area: 35.3 m2
   - Volume per desk: 16.48 m3
-  - Area per desk: 5.884125000000012
-  - Length of desk: N/A
+  - Area per desk: 5.88 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217108
-  - Height: 2799.999999999999
-  - Area: 26.93924999999998
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999995
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217111
-  - Height: 2799.999999999999
-  - Area: 26.93924999999961
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999903
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217114
-  - Height: 2799.999999999999
-  - Area: 26.93924999999984
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.73481249999996
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217117
-  - Height: 2799.999999999999
-  - Area: 13.124249999999869
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124249999999869
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217120
-  - Height: 2799.999999999999
-  - Area: 13.124250000000005
+  - Height: 2.8 m
+  - Area: 13.12 m2
   - Volume per desk: 36.75 m3
-  - Area per desk: 13.124250000000005
-  - Length of desk: N/A
+  - Area per desk: 13.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217123
-  - Height: 2799.999999999999
-  - Area: 26.939249999999905
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999976
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1217129
-  - Height: 2799.999999999999
-  - Area: 26.939249999999834
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999959
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1222020
-  - Height: 2800.0
-  - Area: 102.08081250000068
+  - Height: 2.8 m
+  - Area: 102.08 m2
   - Volume per desk: 11.91 m3
-  - Area per desk: 4.253367187500028
-  - Length of desk: N/A
+  - Area per desk: 4.25 m2
+  - Length of desk: N/A mm
 
 Space: Office:1222336
-  - Height: 2800.0
-  - Area: 17.19975000000002
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.59987500000001
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1228977
-  - Height: 2799.9999999999995
-  - Area: 17.199749999999938
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.599874999999969
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1228980
-  - Height: 2799.9999999999995
-  - Area: 35.30474999999993
+  - Height: 2.8 m
+  - Area: 35.3 m2
   - Volume per desk: 16.48 m3
-  - Area per desk: 5.884124999999988
-  - Length of desk: N/A
+  - Area per desk: 5.88 m2
+  - Length of desk: N/A mm
 
 Space: Office:1228983
-  - Height: 2799.9999999999995
-  - Area: 35.304749999999885
+  - Height: 2.8 m
+  - Area: 35.3 m2
   - Volume per desk: 16.48 m3
-  - Area per desk: 5.8841249999999805
-  - Length of desk: N/A
+  - Area per desk: 5.88 m2
+  - Length of desk: N/A mm
 
 Space: Office:1228989
-  - Height: 2799.9999999999995
-  - Area: 17.19974999999981
+  - Height: 2.8 m
+  - Area: 17.2 m2
   - Volume per desk: 24.08 m3
-  - Area per desk: 8.599874999999905
-  - Length of desk: N/A
+  - Area per desk: 8.6 m2
+  - Length of desk: N/A mm
 
 Space: Office:1229004
-  - Height: 2799.9999999999995
-  - Area: 26.939249999999852
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999963
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1229007
-  - Height: 2799.9999999999995
-  - Area: 26.939249999999873
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999968
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1229019
-  - Height: 2799.9999999999995
-  - Area: 26.939249999999813
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999953
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1229022
-  - Height: 2799.9999999999995
-  - Area: 26.939249999999916
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999979
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Office:1229025
-  - Height: 2799.9999999999995
-  - Area: 26.939249999999916
+  - Height: 2.8 m
+  - Area: 26.94 m2
   - Volume per desk: 18.86 m3
-  - Area per desk: 6.734812499999979
-  - Length of desk: N/A
+  - Area per desk: 6.73 m2
+  - Length of desk: N/A mm
 
 Space: Stair:1230460
-  - Height: 2800.0
-  - Area: 200.18486249999924
+  - Height: 2.8 m
+  - Area: 200.18 m2
   - Volume per desk: 22.42 m3
-  - Area per desk: 8.00739449999997
-  - Length of desk: N/A
+  - Area per desk: 8.01 m2
+  - Length of desk: N/A mm
 
 Space: Student space:1580619
-  - Height: 2799.9999999999995
-  - Area: 112.64049999998643
+  - Height: 2.8 m
+  - Area: 112.64 m2
   - Volume per desk: 78.85 m3
-  - Area per desk: 28.160124999996608
-  - Length of desk: N/A
+  - Area per desk: 28.16 m2
+  - Length of desk: N/A mm
 
 Space: Office:1582587
-  - Height: 2800.0
-  - Area: 47.791599999999896
+  - Height: 2.8 m
+  - Area: 47.79 m2
   - Volume per desk: 11.15 m3
-  - Area per desk: 3.982633333333325
-  - Length of desk: N/A
+  - Area per desk: 3.98 m2
+  - Length of desk: N/A mm
 
 Space: Office:1582624
-  - Height: 2800.0
-  - Area: 91.84724999999989
+  - Height: 2.8 m
+  - Area: 91.85 m2
   - Volume per desk: 10.29 m3
-  - Area per desk: 3.6738899999999957
-  - Length of desk: N/A
+  - Area per desk: 3.67 m2
+  - Length of desk: N/A mm
 
 Space: Office:1582627
-  - Height: 2800.0
-  - Area: 99.1417500000002
+  - Height: 2.8 m
+  - Area: 99.14 m2
   - Volume per desk: 9.91 m3
-  - Area per desk: 3.540776785714293
-  - Length of desk: N/A
+  - Area per desk: 3.54 m2
+  - Length of desk: N/A mm
 
 Space: Office:2201265
-  - Height: 2800.0
-  - Area: 107.52924999999912
+  - Height: 2.8 m
+  - Area: 107.53 m2
   - Volume per desk: 13.09 m3
-  - Area per desk: 4.675184782608658
-  - Length of desk: N/A
+  - Area per desk: 4.68 m2
+  - Length of desk: N/A mm
 
 Space: Office:2201268
-  - Height: 2800.0
-  - Area: 105.70949999999958
+  - Height: 2.8 m
+  - Area: 105.71 m2
   - Volume per desk: 10.57 m3
-  - Area per desk: 3.7753392857142707
-  - Length of desk: N/A
+  - Area per desk: 3.78 m2
+  - Length of desk: N/A mm
 
 Space: Office:2234409
-  - Height: 2800.0
-  - Area: 40.567306249999646
+  - Height: 2.8 m
+  - Area: 40.57 m2
   - Volume per desk: 8.74 m3
-  - Area per desk: 3.120562019230742
-  - Length of desk: N/A
+  - Area per desk: 3.12 m2
+  - Length of desk: N/A mm
 
 Space: Office:2234413
-  - Height: 2800.0
-  - Area: 35.44499999999989
+  - Height: 2.8 m
+  - Area: 35.44 m2
   - Volume per desk: 7.63 m3
-  - Area per desk: 2.726538461538453
-  - Length of desk: N/A
+  - Area per desk: 2.73 m2
+  - Length of desk: N/A mm
 
 Space: Student space:2238662
-  - Height: 2800.000000000001
-  - Area: 112.26144999999953
+  - Height: 2.8 m
+  - Area: 112.26 m2
   - Volume per desk: 78.58 m3
-  - Area per desk: 28.065362499999882
-  - Length of desk: N/A
+  - Area per desk: 28.07 m2
+  - Length of desk: N/A mm
