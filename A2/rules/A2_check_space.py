@@ -42,8 +42,12 @@ print(psets['Dimensions'])
 with open("A2/A2_analyst_checks_GRP2.txt", "w") as f:
     f.write("I have analysed desks in the office spaces in the ifc model.\n")
     f.write("I have done so in accordance to 'Arbejdstilsynet' the governmental body regulating working spaces.\n")
-
-
+    f.write("Gudelines from Arbejdstilsynet:\n")
+    f.write("The height to the ceiling in the office space must be at least 2.5 meters.\n")
+    f.write("The floor area must be at least 7 m2.\n")
+    f.write("There must be 12 m3 of air in the work space per person.\n")
+    f.write("Length of desks should be 117 cm.\n")
+    f.write("Link to gudelines: https://regler.at.dk/at-vejledninger/arbejdspladsens-indretning-inventar-a-1-15/ \n")
     for space in deskSpaces:
         f.write(f"\nSpace: {space.Name or space.GlobalId}\n")
         psets = ifcopenshell.util.element.get_psets(space)
