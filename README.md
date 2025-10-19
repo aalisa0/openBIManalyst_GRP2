@@ -1,35 +1,12 @@
 # BIManalyst group xy
-We are checking desk and bicycle stands, here are the findings:
+A1: Here are 'rules' to verify if the ifc-model for no. of claimed desks and bicycle stands
 
-Here are the IfcWall elements w/w.o. classifications
+See the 'A1_alisaRule' for code 
 
-Amount of elements with classification: 0
+See the 'A1_analyst_checks_GRP2.txt' for results  
 
-Amount of elements without classification: 268
+A2: Here we check if the the office spaces (IfcSpace)are in accordance to 'Arbejdstilsynet' the governmental body regulating working spaces.
 
-Here are no of desks per storey
+See the 'A2_check_space.py' for code 
 
-No. desks lv_1 - lv_4: (51, 82, 175, 112)
-
-Claims are:
-No. desks lv_1 - lv_4: (43, 82, 175, 112)
-
-
-Claim: 66 bicycle stands in the basement and 102 bicycle parking spots outside. 
-
-
-Here are the bicycle stands per storey. There are 6 stands per unit.
-
-Level -2 → 0 elements
-
-Level -1 → 11 elements
-
-Level 0 → 0 elements
-
-Level 1 → 0 elements
-
-Level 2 → 0 elements
-
-Level 3 → 0 elements
-
-Level 4 → 0 elements
+See the 'A2_analyst_checks_GRP2.txt' for results 
