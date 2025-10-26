@@ -1,11 +1,11 @@
 I have analysed desks in the office spaces in the ifc model.
 I have done so in accordance to 'Arbejdstilsynet' the governmental body regulating working spaces.
 Guidelines from Arbejdstilsynet:
-The height to the ceiling in the office space must be at least 2.5 meters.
-The floor area must be at least 7 m2.
-There must be 12 m3 of air in the work space per person.
-Length of desks should be 117 cm.
-Link to guidelines: https://regler.at.dk/at-vejledninger/arbejdspladsens-indretning-inventar-a-1-15/ 
+ - The height to the ceiling in the office space must be at least 2.5 meters.
+ - The floor area must be at least 7 m2.
+ - There must be 12 m3 of air in the work space per person.
+ - Length of desks should be 117 cm.
+ - Link to guidelines: https://regler.at.dk/at-vejledninger/arbejdspladsens-indretning-inventar-a-1-15/ 
 
 Space: Office:1158149
   - Height: 2.8 m

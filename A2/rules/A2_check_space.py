@@ -2,10 +2,24 @@
 import ifcopenshell as ifc
 import ifcopenshell.util.classification
 import ifcopenshell.util.selector
+import re, os
+
+pattern = r".*\.ifc$"  # Match all files ending with ".ifc"
+
+list_of_ifc_files = []
+
+cnt = 1
+
+for filename in os.listdir("."):
+    if re.search(pattern, filename):
+        print(str(cnt)+".", filename)
+        list_of_ifc_files.append(filename)
+        cnt += 1
+
+modelChoice = int(input("\nWhich ifc file do you want to use? (Please enter the number corresponding to the file):\n"))
 
 #Load IFC file
-ifc_path = '/Users/alisatellefsen/Library/CloudStorage/OneDrive-DanmarksTekniskeUniversitet/DTU/Kandidat/2. Sem/41934 Advanced BIM/openBIManalyst_GRP2/25-16-D-ARCH.ifc'
-model = ifc.open(ifc_path)
+model = ifc.open(list_of_ifc_files[modelChoice - 1])
 
 spaces = model.by_type("IfcSpace")
 
@@ -43,11 +57,11 @@ with open("A2/A2_analyst_checks_GRP2.txt", "w") as f:
     f.write("I have analysed desks in the office spaces in the ifc model.\n")
     f.write("I have done so in accordance to 'Arbejdstilsynet' the governmental body regulating working spaces.\n")
     f.write("Guidelines from Arbejdstilsynet:\n")
-    f.write("The height to the ceiling in the office space must be at least 2.5 meters.\n")
-    f.write("The floor area must be at least 7 m2.\n")
-    f.write("There must be 12 m3 of air in the work space per person.\n")
-    f.write("Length of desks should be 117 cm.\n")
-    f.write("Link to guidelines: https://regler.at.dk/at-vejledninger/arbejdspladsens-indretning-inventar-a-1-15/ \n")
+    f.write(" - The height to the ceiling in the office space must be at least 2.5 meters.\n")
+    f.write(" - The floor area must be at least 7 m2.\n")
+    f.write(" - There must be 12 m3 of air in the work space per person.\n")
+    f.write(" - Length of desks should be 117 cm.\n")
+    f.write(" - Link to guidelines: https://regler.at.dk/at-vejledninger/arbejdspladsens-indretning-inventar-a-1-15/ \n")
     for space in deskSpaces:
         f.write(f"\nSpace: {space.Name or space.GlobalId}\n")
         psets = ifcopenshell.util.element.get_psets(space)
