@@ -286,12 +286,7 @@ with open("A3/A3_analyst_checks_GRP2.txt", "w") as f:
     desks_outside_spaces_count = no_of_desks_in_space(storey, False)
     pset_for_desk_spaces()
 
-
-
-
-
-
-
+##################### MAKE PLOTS ###########################
 
 def make_plots():
     # use the global stats already computed
@@ -313,7 +308,7 @@ def make_plots():
     plt.axis("equal")
     plt.savefig("A3/plot_desks_in_vs_out.png", dpi=200, bbox_inches="tight")
 
-    # 2) Bar chart: desks in spaces per level
+    # 2) Bar chart: desks in spaces per level/storey
     levels = list(desks_per_level.keys())
     counts = [desks_per_level[lvl] for lvl in levels]
 
@@ -324,11 +319,16 @@ def make_plots():
     plt.title("Desks in spaces per level")
     plt.savefig("A3/plot_desks_per_level.png", dpi=200, bbox_inches="tight")
 
-    # 3) Area per desk distribution (≤ 7 m² vs > 7 m²)
+    # 3) Floor area per desk distribution (≤ 7 m2 vs > 7 ,2)
     plt.figure()
-    plt.bar(["≤ 7 m²", "> 7 m²"], [desks_area_7_or_below, desks_area_above_7])
-    plt.ylabel("Number of desks")
-    plt.title("Area per desk distribution")
+    plt.title("Floor area per desk ≤ 7 m2 vs > 7 m2")
+    plt.pie(
+        [desks_area_7_or_below, desks_area_above_7], 
+        labels = ["≤ 7 m²", "> 7 m²"],
+        autopct="%1.1f%%",
+        startangle=90,
+    )
+    plt.axis("equal")
     plt.savefig("A3/plot_area_per_desk.png", dpi=200, bbox_inches="tight")
 
     print("Plots saved to:")
@@ -336,11 +336,9 @@ def make_plots():
     print("  A3/plot_desks_per_level.png")
     print("  A3/plot_area_per_desk.png")
 
-
-
 make_plots()
     
 
-
+#################### END OF SCRIPT ###########################
 
 
