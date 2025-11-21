@@ -7,522 +7,629 @@ Guidelines from Arbejdstilsynet:
  - Length of desks should be 117 cm.
  - Link to guidelines: https://regler.at.dk/at-vejledninger/arbejdspladsens-indretning-inventar-a-1-15/ 
 
+Total of desks in spaces: 321
+Total of desks outside spaces: 99
+
 Space: Office:1158149
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1158149
-  - No. of desks in this: 6
+  - No. of desks in this space: 6
+  - Floor: Level 3
   - Height: 2.8 m
   - Area: 35.3 m2
   - Volume per desk: 16.48 m3
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 148.00000000000003
 
 Space: Office:1158167
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1158167
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 3
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1158170
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1158170
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 3
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1216965
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1216965
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1216973
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1216973
-  - No. of desks in this: 6
+  - No. of desks in this space: 6
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 35.3 m2
   - Volume per desk: 16.48 m3
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 148.00000000000003
 
 Space: Office:1216985
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1216985
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1216988
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1216988
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1216991
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1216991
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1216994
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1216994
-  - No. of desks in this: 6
+  - No. of desks in this space: 6
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 35.3 m2
   - Volume per desk: 16.48 m3
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 148.00000000000003
 
 Space: Office:1217012
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217012
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217015
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217015
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217018
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217018
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217021
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217021
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217024
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217024
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217027
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217027
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217030
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217030
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217033
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217033
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217045
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217045
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217048
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217048
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217084
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217084
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1217087
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217087
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1217096
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217096
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1217102
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217102
-  - No. of desks in this: 6
+  - No. of desks in this space: 6
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 35.3 m2
   - Volume per desk: 16.48 m3
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 148.00000000000003
 
 Space: Office:1217105
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217105
-  - No. of desks in this: 6
+  - No. of desks in this space: 6
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 35.3 m2
   - Volume per desk: 16.48 m3
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 148.00000000000003
 
 Space: Office:1217108
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217108
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1217111
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217111
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1217114
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217114
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1217117
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217117
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217120
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217120
-  - No. of desks in this: 1
+  - No. of desks in this space: 1
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 13.12 m2
   - Volume per desk: 36.75 m3
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 888.0000000000001
 
 Space: Office:1217123
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217123
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1217129
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1217129
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 2
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1222020
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1222020
-  - No. of desks in this: 24
+  - No. of desks in this space: 24
+  - Floor: Level 4
   - Height: 2.8 m
   - Area: 102.08 m2
   - Volume per desk: 11.91 m3
   - Area per desk: 4.25 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0
 
 Space: Office:1222336
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1222336
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 3
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1228977
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1228977
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1228980
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1228980
-  - No. of desks in this: 6
+  - No. of desks in this space: 6
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 35.3 m2
   - Volume per desk: 16.48 m3
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 148.00000000000003
 
 Space: Office:1228983
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1228983
-  - No. of desks in this: 6
+  - No. of desks in this space: 6
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 35.3 m2
   - Volume per desk: 16.48 m3
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 148.00000000000003
 
 Space: Office:1228989
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1228989
-  - No. of desks in this: 2
+  - No. of desks in this space: 2
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 17.2 m2
   - Volume per desk: 24.08 m3
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 444.00000000000006
 
 Space: Office:1229004
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1229004
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1229007
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1229007
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1229019
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1229019
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1229022
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1229022
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Office:1229025
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1229025
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 26.94 m2
   - Volume per desk: 18.86 m3
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 1
+  - Total door width: 888.0000000000001
+  - Desk to door width ratio: 222.00000000000003
 
 Space: Stair:1230460
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Stair:1230460
-  - No. of desks in this: 25
+  - No. of desks in this space: 25
+  - Floor: Level 4
   - Height: 2.8 m
   - Area: 200.18 m2
   - Volume per desk: 22.42 m3
   - Area per desk: 8.01 m2
   - Length of desk: N/A mm
+  - No. of doors: 2
+  - Total door width: 2973.0
+  - Desk to door width ratio: 118.92
 
 Space: Student space:1580619
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Student space:1580619
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 112.64 m2
   - Volume per desk: 78.85 m3
   - Area per desk: 28.16 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0
 
 Space: Office:1582587
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1582587
-  - No. of desks in this: 12
+  - No. of desks in this space: 12
+  - Floor: Level 4
   - Height: 2.8 m
   - Area: 47.79 m2
   - Volume per desk: 11.15 m3
   - Area per desk: 3.98 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0
 
 Space: Office:1582624
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1582624
-  - No. of desks in this: 25
+  - No. of desks in this space: 25
+  - Floor: Level 3
   - Height: 2.8 m
   - Area: 91.85 m2
   - Volume per desk: 10.29 m3
   - Area per desk: 3.67 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0
 
 Space: Office:1582627
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:1582627
-  - No. of desks in this: 28
+  - No. of desks in this space: 28
+  - Floor: Level 3
   - Height: 2.8 m
   - Area: 99.14 m2
   - Volume per desk: 9.91 m3
   - Area per desk: 3.54 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0
 
 Space: Office:2201265
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:2201265
-  - No. of desks in this: 23
+  - No. of desks in this space: 23
+  - Floor: Level 3
   - Height: 2.8 m
   - Area: 107.53 m2
   - Volume per desk: 13.09 m3
   - Area per desk: 4.68 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0
 
 Space: Office:2201268
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:2201268
-  - No. of desks in this: 28
+  - No. of desks in this space: 28
+  - Floor: Level 3
   - Height: 2.8 m
   - Area: 105.71 m2
   - Volume per desk: 10.57 m3
   - Area per desk: 3.78 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0
 
 Space: Office:2234409
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:2234409
-  - No. of desks in this: 13
+  - No. of desks in this space: 13
+  - Floor: Level 4
   - Height: 2.8 m
   - Area: 40.57 m2
   - Volume per desk: 8.74 m3
   - Area per desk: 3.12 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0
 
 Space: Office:2234413
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Office:2234413
-  - No. of desks in this: 13
+  - No. of desks in this space: 13
+  - Floor: Level 4
   - Height: 2.8 m
   - Area: 35.44 m2
   - Volume per desk: 7.63 m3
   - Area per desk: 2.73 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0
 
 Space: Student space:2238662
-  - Storey name: UNKNOWN_STOREY
-  - Space name: Student space:2238662
-  - No. of desks in this: 4
+  - No. of desks in this space: 4
+  - Floor: Level 1
   - Height: 2.8 m
   - Area: 112.26 m2
   - Volume per desk: 78.58 m3
   - Area per desk: 28.07 m2
   - Length of desk: N/A mm
+  - No. of doors: 0
+  - Total door width: 0
+  - Desk to door width ratio: 0.0

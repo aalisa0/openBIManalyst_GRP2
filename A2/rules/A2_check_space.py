@@ -5,6 +5,7 @@ import ifcopenshell.util.selector
 import re, os
 from collections import defaultdict
 import numpy as np
+import json
 #import pandas as pd
 
 
@@ -30,12 +31,14 @@ modelChoice = int(input("\nWhich ifc file do you want to use? (Please enter the 
 model = ifc.open(list_of_ifc_files[modelChoice - 1])
 
 
-######################### DESKS IN SPACES ###########################
+
 #the relevant elements that will be worked with:
 spaces = model.by_type("IfcSpace")
 doors = model.by_type("IfcDoor")
 storey = model.by_type("IfcBuildingStorey")
 
+
+######################### DESKS IN SPACES ###########################
 
 #Function to identify if an element is a desk
 def is_desk(element):
@@ -52,63 +55,43 @@ def is_desk(element):
 #A list to store spaces with desks
 deskSpaces = []
 #Iterate through spaces and check for desks and print quantity
-for space in spaces:
-    print(space)
-    desks_in_space = []
-    for rel in model.get_inverse(space):
-        if rel.is_a("IfcRelContainedInSpatialStructure"):
-            for element in rel.RelatedElements:
-                if is_desk(element):
-                    desks_in_space.append(element)
 
-    print(f"Space: {space.Name or space.GlobalId}")
-    if desks_in_space:
-        print(f"  → Found {len(desks_in_space)}")
-        deskSpaces.append(space)
+
+#Func. to count no. of desks in spaces in and outside spaces 
+#we call this in line 
+def no_of_desks_in_space(spaces, toAppend=True):
+    sum = 0
+    for space in spaces:
+        desks_in_space = []
+        for rel in model.get_inverse(space):
+            if rel.is_a("IfcRelContainedInSpatialStructure"):
+                for element in rel.RelatedElements:
+                    if is_desk(element):
+                        desks_in_space.append(element)
+                        
+        print(f"Space: {space.Name or space.GlobalId}")
+        if desks_in_space:
+            print(f"  → Found {len(desks_in_space)}")
+            sum += len(desks_in_space)
+            if toAppend:
+                deskSpaces.append(space)
+        else:
+            print("  → No desks found.")
+    print(f"\nTotal number of desks in model: {sum}")
+    if toAppend:
+        f.write(f"\nTotal of desks in spaces: {sum}\n")
     else:
-        print("  → No desks found.")
+        f.write(f"Total of desks outside spaces: {sum}\n")
+        
+
+
 #COMMENTS
-#We iterate through all spaces in the model
+#We iterate through all spaces and storyes  in the model
 #We use .get_inverse to find where the space is referenced in IfcRelContainedInSpatialStructure relationships
 #Then we check the RelatedElements of those relationships to see if any are desks
 #If desks are found, we add the space to 'deskSpaces = []' list
 
-def get_storey_for_space(model, space):
-    to_visit = [space]
-    visited = set()
-    while to_visit:
-        obj = to_visit.pop()
-        if obj in visited:
-            continue
-        visited.add(obj)
-
-        for rel in model.get_inverse(obj):
-            # Space contained in a spatial structure (storey, building, etc.)
-            if rel.is_a("IfcRelContainedInSpatialStructure"):
-                container = rel.RelatingStructure
-                if container.is_a("IfcBuildingStorey"):
-                    return container
-                to_visit.append(container)
-
-            # Or space might be aggregated into something that is on a storey
-            elif rel.is_a("IfcRelAggregates"):
-                container = rel.RelatingObject
-                if container.is_a("IfcBuildingStorey"):
-                    return container
-                to_visit.append(container)
-
-    return None
-
-#textfile generation
-with open("A2/A2_analyst_checks_GRP2.txt", "w") as f:
-    f.write("I have analysed desks in the office spaces in the ifc model.\n")
-    f.write("I have done so in accordance to 'Arbejdstilsynet' the governmental body regulating working spaces.\n")
-    f.write("Guidelines from Arbejdstilsynet:\n")
-    f.write(" - The height to the ceiling in the office space must be at least 2.5 meters.\n")
-    f.write(" - The floor area must be at least 7 m2.\n")
-    f.write(" - There must be 12 m3 of air in the work space per person.\n")
-    f.write(" - Length of desks should be 117 cm.\n")
-    f.write(" - Link to guidelines: https://regler.at.dk/at-vejledninger/arbejdspladsens-indretning-inventar-a-1-15/ \n")
+def pset_for_desk_spaces():
     for space in deskSpaces:
         f.write(f"\nSpace: {space.Name or space.GlobalId}\n")
         #Quantities are found in the property sets ('psets') of the spaces
@@ -123,18 +106,16 @@ with open("A2/A2_analyst_checks_GRP2.txt", "w") as f:
                         desks_in_space.append(element)
         desk_count = len(desks_in_space)
 
-        # find the storey (IfcBuildingStorey) for this space
-        storey_name = storey.Name if storey and getattr(storey, "Name", None) else "UNKNOWN_STOREY"
+        doors = space_to_doors[space]
+        doorString = ""
+        door_width = 0
+        for d in doors:
+            door_pset = ifcopenshell.util.element.get_psets(d)
+            door_width += door_pset['Dimensions']['Width']
 
-        space_name = getattr(space, "Name", "") or "UNNAMED_SPACE"
-
-        # write one line per space
-        f.write(f"  - Storey name: {storey_name}\n")
-        f.write(f"  - Space name: {space_name}\n")
-        f.write(f"  - No. of desks in this: {desk_count}\n")
-            
 
         if 'Dimensions' in psets:
+            constraints = psets['Constraints']
             dimensions = psets['Dimensions']
             height = dimensions.get('Unbounded Height', 'N/A')
             floor_area = dimensions.get('Area', 'N/A')
@@ -143,18 +124,21 @@ with open("A2/A2_analyst_checks_GRP2.txt", "w") as f:
             #Here we find the desk dimensions, however there is no 'length property' in the pset
             #There is a desk length in the name of the element though...
             desk_length = dimensions.get('Length', 'N/A')
+            floor = constraints.get('Level')
 
-            
+            f.write(f"  - No. of desks in this space: {desk_count}\n")
+            f.write(f"  - Floor: {floor}\n")
             f.write(f"  - Height: {round(height*pow(10, -3),2)} m\n")
             f.write(f"  - Area: {round(floor_area,2)} m2\n")
             f.write(f"  - Volume per desk: {round(volume_per_desk* pow(10, -3), 2)} m3\n")
             f.write(f"  - Area per desk: {round(floor_area_desk,2)} m2\n")
             f.write(f"  - Length of desk: {desk_length} mm\n")
+            f.write(f"  - No. of doors: {len(doors)}\n")
+            f.write(f"  - Total door width: {door_width}\n")
+            f.write(f"  - Desk to door width ratio: {door_width / desk_count}\n")
 
         else:
             f.write("  - No Dimensions Pset found.\n")
-
-
 
 
 ###################### DOORS AND DESKS ###########################
@@ -195,6 +179,8 @@ def point_in_box(point, minv, maxv, margin=-0.5):
         (minv[2] + margin) <= point[2] <= (maxv[2] - margin)
     )
 
+
+##################### DOOR TO SPACE MAPPING #######################
 space_to_doors = defaultdict(list)
 
 # door -> space (if you want reverse mapping)
@@ -230,31 +216,51 @@ for sp, doors_in_space in space_to_doors.items():
         for d in doors_in_space:
             door_name = d.Name or d.Tag or d.GlobalId
             print(f"  - Door {door_name} ({d.GlobalId})")
-    print(sp)
-    for space in sp:
-        desks_in_space = []
-        for rel in model.get_inverse(space):
-            if rel.is_a("IfcRelContainedInSpatialStructure"):
-                for element in rel.RelatedElements:
-                    if is_desk(element):
-                        desks_in_space.append(element)
+    desks_in_space = []
+    for rel in model.get_inverse(sp):
+        if rel.is_a("IfcRelContainedInSpatialStructure"):
+            for element in rel.RelatedElements:
+                if is_desk(element):
+                    desks_in_space.append(element)
 
-        print(f"Space: {space.Name or space.GlobalId}")
-        if desks_in_space:
-            print(f"  → Found {len(desks_in_space)}")
-            door_width_sum = 0
-            for d in doors_in_space:
-                pset = ifcopenshell.util.element.get_psets(d)
-                door_width_sum += pset['Dimensions']['Width']
-            fireSafety_numberdesks_widthdoor = door_width_sum / len(desks_in_space)
-            print(f'  → Safety check (cm door width per desk): {fireSafety_numberdesks_widthdoor} mm')
+    print(f"Space: {sp.Name or sp.GlobalId}")
+    if desks_in_space:
+        print(f"  → Found {len(desks_in_space)}")
+        door_width_sum = 0
+        for d in doors_in_space:
+            pset = ifcopenshell.util.element.get_psets(d)
+            door_width_sum += pset['Dimensions']['Width']
+        fireSafety_numberdesks_widthdoor = door_width_sum / len(desks_in_space)
+        print(f'  → Safety check (cm door width per desk): {fireSafety_numberdesks_widthdoor} mm')
 
 
 
-""" for b in model.by_type("IfcRelSpaceBoundary"):
-        for relbounded in b.BoundedBy:
-            sp = b.RelatingSpace
-            el = b.RelatedBuildingElement
-            print(sp, el)
+############### CALL JSON #################
+guidelines = {}
+with open("A2/test.json") as file:
+    guidelines = json.load(file)
 
- """
+
+################### TEXT FILE GENERATION ##########################
+
+with open("A2/A2_analyst_checks_GRP2.txt", "w") as f:
+    for line in guidelines["guidelines"]:
+        f.write(line)
+
+
+##################### DESK QUANTITIES AND DIMENSIONS ###########################
+
+    #call the function 
+    no_of_desks_in_space(spaces)
+    #call the function again without appending to deskSpaces. Because there are desks outside of spaces in the model!
+    no_of_desks_in_space(storey, False)
+    pset_for_desk_spaces()
+
+
+
+
+
+
+
+
+
