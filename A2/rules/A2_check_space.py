@@ -134,8 +134,8 @@ def pset_for_desk_spaces():
             f.write(f"  - Area per desk: {round(floor_area_desk,2)} m2\n")
             f.write(f"  - Length of desk: {desk_length} mm\n")
             f.write(f"  - No. of doors: {len(doors)}\n")
-            f.write(f"  - Total door width: {door_width}\n")
-            f.write(f"  - Desk to door width ratio: {door_width / desk_count}\n")
+            f.write(f"  - Total door width (internal): {round(door_width* pow(10, -1),2)} cm\n")
+            f.write(f"  - Desk to door width ratio: {round((door_width / desk_count)* pow(10, -1),2)} cm\n")
 
         else:
             f.write("  - No Dimensions Pset found.\n")
@@ -169,10 +169,6 @@ for sp in spaces:
         print(f"Could not compute bbox for space {sp.GlobalId}: {e}")
 
 def point_in_box(point, minv, maxv, margin=-0.5):
-    """
-    Check if point is inside axis-aligned bounding box [minv, maxv].
-    margin > 0 shrinks the box a bit, margin < 0 expands it.
-    """
     return (
         (minv[0] + margin) <= point[0] <= (maxv[0] - margin) and
         (minv[1] + margin) <= point[1] <= (maxv[1] - margin) and
@@ -203,7 +199,7 @@ for door in doors:
             break
 
     if assigned_space is None:
-        # Midpoint not inside any IfcSpace
+        # Midpoint not inside/close to any IfcSpace
         print(f"Door {door.GlobalId} is not inside any IfcSpace (by midpoint).")
 
 
@@ -235,9 +231,9 @@ for sp, doors_in_space in space_to_doors.items():
 
 
 
-############### CALL JSON #################
+############### CALL JSON GUIDELINES FILE #################
 guidelines = {}
-with open("A2/test.json") as file:
+with open("A2/guide.json") as file:
     guidelines = json.load(file)
 
 

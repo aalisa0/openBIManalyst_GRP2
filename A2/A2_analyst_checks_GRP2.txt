@@ -19,8 +19,8 @@ Space: Office:1158149
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 148.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 14.8 cm
 
 Space: Office:1158167
   - No. of desks in this space: 4
@@ -31,8 +31,8 @@ Space: Office:1158167
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1158170
   - No. of desks in this space: 4
@@ -43,8 +43,8 @@ Space: Office:1158170
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1216965
   - No. of desks in this space: 2
@@ -55,8 +55,8 @@ Space: Office:1216965
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1216973
   - No. of desks in this space: 6
@@ -67,8 +67,8 @@ Space: Office:1216973
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 148.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 14.8 cm
 
 Space: Office:1216985
   - No. of desks in this space: 2
@@ -79,8 +79,8 @@ Space: Office:1216985
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1216988
   - No. of desks in this space: 2
@@ -91,8 +91,8 @@ Space: Office:1216988
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1216991
   - No. of desks in this space: 2
@@ -103,8 +103,8 @@ Space: Office:1216991
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1216994
   - No. of desks in this space: 6
@@ -115,8 +115,8 @@ Space: Office:1216994
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 148.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 14.8 cm
 
 Space: Office:1217012
   - No. of desks in this space: 1
@@ -127,8 +127,8 @@ Space: Office:1217012
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217015
   - No. of desks in this space: 1
@@ -139,8 +139,8 @@ Space: Office:1217015
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217018
   - No. of desks in this space: 1
@@ -151,8 +151,8 @@ Space: Office:1217018
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217021
   - No. of desks in this space: 1
@@ -163,8 +163,8 @@ Space: Office:1217021
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217024
   - No. of desks in this space: 1
@@ -175,8 +175,8 @@ Space: Office:1217024
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217027
   - No. of desks in this space: 1
@@ -187,8 +187,8 @@ Space: Office:1217027
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217030
   - No. of desks in this space: 1
@@ -199,8 +199,8 @@ Space: Office:1217030
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217033
   - No. of desks in this space: 1
@@ -211,8 +211,8 @@ Space: Office:1217033
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217045
   - No. of desks in this space: 1
@@ -223,8 +223,8 @@ Space: Office:1217045
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217048
   - No. of desks in this space: 1
@@ -235,8 +235,8 @@ Space: Office:1217048
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217084
   - No. of desks in this space: 2
@@ -247,8 +247,8 @@ Space: Office:1217084
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1217087
   - No. of desks in this space: 2
@@ -259,8 +259,8 @@ Space: Office:1217087
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1217096
   - No. of desks in this space: 2
@@ -271,8 +271,8 @@ Space: Office:1217096
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1217102
   - No. of desks in this space: 6
@@ -283,8 +283,8 @@ Space: Office:1217102
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 148.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 14.8 cm
 
 Space: Office:1217105
   - No. of desks in this space: 6
@@ -295,8 +295,8 @@ Space: Office:1217105
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 148.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 14.8 cm
 
 Space: Office:1217108
   - No. of desks in this space: 4
@@ -307,8 +307,8 @@ Space: Office:1217108
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1217111
   - No. of desks in this space: 4
@@ -319,8 +319,8 @@ Space: Office:1217111
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1217114
   - No. of desks in this space: 4
@@ -331,8 +331,8 @@ Space: Office:1217114
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1217117
   - No. of desks in this space: 1
@@ -343,8 +343,8 @@ Space: Office:1217117
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217120
   - No. of desks in this space: 1
@@ -355,8 +355,8 @@ Space: Office:1217120
   - Area per desk: 13.12 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 888.0000000000001
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 88.8 cm
 
 Space: Office:1217123
   - No. of desks in this space: 4
@@ -367,8 +367,8 @@ Space: Office:1217123
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1217129
   - No. of desks in this space: 4
@@ -379,8 +379,8 @@ Space: Office:1217129
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1222020
   - No. of desks in this space: 24
@@ -391,8 +391,8 @@ Space: Office:1222020
   - Area per desk: 4.25 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
 
 Space: Office:1222336
   - No. of desks in this space: 2
@@ -403,8 +403,8 @@ Space: Office:1222336
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1228977
   - No. of desks in this space: 2
@@ -415,8 +415,8 @@ Space: Office:1228977
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1228980
   - No. of desks in this space: 6
@@ -427,8 +427,8 @@ Space: Office:1228980
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 148.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 14.8 cm
 
 Space: Office:1228983
   - No. of desks in this space: 6
@@ -439,8 +439,8 @@ Space: Office:1228983
   - Area per desk: 5.88 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 148.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 14.8 cm
 
 Space: Office:1228989
   - No. of desks in this space: 2
@@ -451,8 +451,8 @@ Space: Office:1228989
   - Area per desk: 8.6 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 444.00000000000006
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 44.4 cm
 
 Space: Office:1229004
   - No. of desks in this space: 4
@@ -463,8 +463,8 @@ Space: Office:1229004
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1229007
   - No. of desks in this space: 4
@@ -475,8 +475,8 @@ Space: Office:1229007
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1229019
   - No. of desks in this space: 4
@@ -487,8 +487,8 @@ Space: Office:1229019
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1229022
   - No. of desks in this space: 4
@@ -499,8 +499,8 @@ Space: Office:1229022
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Office:1229025
   - No. of desks in this space: 4
@@ -511,8 +511,8 @@ Space: Office:1229025
   - Area per desk: 6.73 m2
   - Length of desk: N/A mm
   - No. of doors: 1
-  - Total door width: 888.0000000000001
-  - Desk to door width ratio: 222.00000000000003
+  - Total door width (internal): 88.8 cm
+  - Desk to door width ratio: 22.2 cm
 
 Space: Stair:1230460
   - No. of desks in this space: 25
@@ -523,8 +523,8 @@ Space: Stair:1230460
   - Area per desk: 8.01 m2
   - Length of desk: N/A mm
   - No. of doors: 2
-  - Total door width: 2973.0
-  - Desk to door width ratio: 118.92
+  - Total door width (internal): 297.3 cm
+  - Desk to door width ratio: 11.89 cm
 
 Space: Student space:1580619
   - No. of desks in this space: 4
@@ -535,8 +535,8 @@ Space: Student space:1580619
   - Area per desk: 28.16 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
 
 Space: Office:1582587
   - No. of desks in this space: 12
@@ -547,8 +547,8 @@ Space: Office:1582587
   - Area per desk: 3.98 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
 
 Space: Office:1582624
   - No. of desks in this space: 25
@@ -559,8 +559,8 @@ Space: Office:1582624
   - Area per desk: 3.67 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
 
 Space: Office:1582627
   - No. of desks in this space: 28
@@ -571,8 +571,8 @@ Space: Office:1582627
   - Area per desk: 3.54 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
 
 Space: Office:2201265
   - No. of desks in this space: 23
@@ -583,8 +583,8 @@ Space: Office:2201265
   - Area per desk: 4.68 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
 
 Space: Office:2201268
   - No. of desks in this space: 28
@@ -595,8 +595,8 @@ Space: Office:2201268
   - Area per desk: 3.78 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
 
 Space: Office:2234409
   - No. of desks in this space: 13
@@ -607,8 +607,8 @@ Space: Office:2234409
   - Area per desk: 3.12 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
 
 Space: Office:2234413
   - No. of desks in this space: 13
@@ -619,8 +619,8 @@ Space: Office:2234413
   - Area per desk: 2.73 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
 
 Space: Student space:2238662
   - No. of desks in this space: 4
@@ -631,5 +631,5 @@ Space: Student space:2238662
   - Area per desk: 28.07 m2
   - Length of desk: N/A mm
   - No. of doors: 0
-  - Total door width: 0
-  - Desk to door width ratio: 0.0
+  - Total door width (internal): 0.0 cm
+  - Desk to door width ratio: 0.0 cm
