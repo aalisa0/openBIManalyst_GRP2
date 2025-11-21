@@ -6,10 +6,13 @@ import re, os
 from collections import defaultdict
 import numpy as np
 import json
+import matplotlib.pyplot as plt
 #import pandas as pd
 
 
-############################ LOAD IFC FILE #############################
+
+
+############################ LOAD ANY IFC FILE #############################
 #Load IFC files from the current directory
 pattern = r".*\.ifc$"  # Match all files ending with ".ifc"
 
@@ -24,10 +27,12 @@ for filename in os.listdir("."):
         cnt += 1
 
 #what the user is asked
+#write # in the terminal to load the file you want
 modelChoice = int(input("\nWhich ifc file do you want to use? (Please enter the number corresponding to the file):\n"))
 
-#write # in the terminal to load the file you want
-#Load IFC file
+
+
+#Open the selected IFC file
 model = ifc.open(list_of_ifc_files[modelChoice - 1])
 
 
@@ -37,12 +42,19 @@ spaces = model.by_type("IfcSpace")
 doors = model.by_type("IfcDoor")
 storey = model.by_type("IfcBuildingStorey")
 
+desks_in_spaces_count = 0         
+desks_outside_spaces_count = 0     
+desks_per_level = defaultdict(int) 
+desks_area_above_7 = 0            
+desks_area_7_or_below = 0   
+
+
 
 ######################### DESKS IN SPACES ###########################
 
 #Function to identify if an element is a desk
 def is_desk(element):
-    if element.is_a("IfcBuildingElementProxy") or element.is_a("IfcFIfcFurniture"):
+    if element.is_a("IfcBuildingElementProxy") or element.is_a("IfcFurniture"):
         name = (element.Name or "").lower()
         obj_type = (element.ObjectType or "").lower()
         return "desk" in name or "desk" in obj_type
@@ -56,11 +68,9 @@ def is_desk(element):
 deskSpaces = []
 #Iterate through spaces and check for desks and print quantity
 
-
 #Func. to count no. of desks in spaces in and outside spaces 
-#we call this in line 
 def no_of_desks_in_space(spaces, toAppend=True):
-    sum = 0
+    total_desks = 0
     for space in spaces:
         desks_in_space = []
         for rel in model.get_inverse(space):
@@ -72,32 +82,29 @@ def no_of_desks_in_space(spaces, toAppend=True):
         print(f"Space: {space.Name or space.GlobalId}")
         if desks_in_space:
             print(f"  → Found {len(desks_in_space)}")
-            sum += len(desks_in_space)
+            total_desks+= len(desks_in_space)
             if toAppend:
                 deskSpaces.append(space)
         else:
             print("  → No desks found.")
-    print(f"\nTotal number of desks in model: {sum}")
+    print(f"\nTotal number of desks in model: {total_desks}")
     if toAppend:
-        f.write(f"\nTotal of desks in spaces: {sum}\n")
+        f.write(f"\nTotal of desks in spaces: {total_desks}\n")
     else:
-        f.write(f"Total of desks outside spaces: {sum}\n")
-        
-
-
+        f.write(f"Total of desks outside spaces: {total_desks}\n")
+    return total_desks
 #COMMENTS
 #We iterate through all spaces and storyes  in the model
-#We use .get_inverse to find where the space is referenced in IfcRelContainedInSpatialStructure relationships
+#We use .get_inverse to find where the space is referenced in IfcRelContainedInSpatialStructure relationshipss
 #Then we check the RelatedElements of those relationships to see if any are desks
 #If desks are found, we add the space to 'deskSpaces = []' list
 
 def pset_for_desk_spaces():
+    global desks_per_level, desks_area_above_7, desks_area_7_or_below
     for space in deskSpaces:
         f.write(f"\nSpace: {space.Name or space.GlobalId}\n")
-        #Quantities are found in the property sets ('psets') of the spaces
         psets = ifcopenshell.util.element.get_psets(space)
         
-        #Finds no. of desks in space
         desks_in_space = []
         for rel in model.get_inverse(space):
             if rel.is_a("IfcRelContainedInSpatialStructure"):
@@ -119,29 +126,51 @@ def pset_for_desk_spaces():
             dimensions = psets['Dimensions']
             height = dimensions.get('Unbounded Height', 'N/A')
             floor_area = dimensions.get('Area', 'N/A')
-            floor_area_desk = floor_area / len(desks_in_space)
-            volume_per_desk = (height * floor_area_desk)
-            #Here we find the desk dimensions, however there is no 'length property' in the pset
-            #There is a desk length in the name of the element though...
-            desk_length = dimensions.get('Length', 'N/A')
-            floor = constraints.get('Level')
+            if isinstance(floor_area, (int, float)) and desk_count > 0 and isinstance(height, (int, float)):  # <<< NEW safety
+                floor_area_desk = floor_area / desk_count
+                volume_per_desk = height * floor_area_desk
+                floor = constraints.get('Level', 'Unknown')
+                desks_per_level[floor] += desk_count  # <<< NEW
 
-            f.write(f"  - No. of desks in this space: {desk_count}\n")
-            f.write(f"  - Floor: {floor}\n")
-            f.write(f"  - Height: {round(height*pow(10, -3),2)} m\n")
-            f.write(f"  - Area: {round(floor_area,2)} m2\n")
-            f.write(f"  - Volume per desk: {round(volume_per_desk* pow(10, -3), 2)} m3\n")
-            f.write(f"  - Area per desk: {round(floor_area_desk,2)} m2\n")
-            f.write(f"  - Length of desk: {desk_length} mm\n")
-            f.write(f"  - No. of doors: {len(doors)}\n")
-            f.write(f"  - Total door width (internal): {round(door_width* pow(10, -1),2)} cm\n")
-            f.write(f"  - Desk to door width ratio: {round((door_width / desk_count)* pow(10, -1),2)} cm\n")
+                # area per desk statistics (for > 7 m²)
+                if floor_area_desk > 7:              # <<< NEW
+                    desks_area_above_7 += desk_count
+                else:
+                    desks_area_7_or_below += desk_count
+
+
+
+                floor_area_desk = floor_area / len(desks_in_space)
+                volume_per_desk = (height * floor_area_desk)
+                #Here we find the desk dimensions, however there is no 'length property' in the pset
+                #There is a desk length in the name of the element though...
+                desk_length = dimensions.get('Length', 'N/A')
+                floor = constraints.get('Level')
+
+                f.write(f"  - No. of desks in this space: {desk_count}\n")
+                f.write(f"  - Floor: {floor}\n")
+                f.write(f"  - Height of space: {round(height*pow(10, -3),2)} m\n")
+                f.write(f"  - Area: {round(floor_area,2)} m2\n")
+                f.write(f"  - Volume per desk: {round(volume_per_desk* pow(10, -3), 2)} m3\n")
+                f.write(f"  - Area per desk: {round(floor_area_desk,2)} m2\n")
+                f.write(f"  - Length of desk: {desk_length} mm\n")
+                f.write(f"  - No. of doors: {len(doors)}\n")
+                f.write(f"  - Total door width (internal): {round(door_width* pow(10, -1),2)} cm\n")
+                f.write(f"  - Desk to door width ratio: {round((door_width / desk_count)* pow(10, -1),2)} cm\n")
+            else:
+                f.write("  - Dimensions missing or not numeric, skipped stats.\n")
 
         else:
             f.write("  - No Dimensions Pset found.\n")
+# COMMENTS
+#Quantities are found in the property sets ('psets') of the spaces
+#then we write these quantities to the text file
+#round is used to limit decimal places for easier reading
+#the floor level is found in the Constraints pset which is seen in the blender file 
 
 
-###################### DOORS AND DESKS ###########################
+
+###################### FIND DOORS BY MIDPOINT ###########################
 
 settings = ifcopenshell.geom.settings()
 settings.set(settings.USE_WORLD_COORDS, True)
@@ -151,15 +180,15 @@ def get_vertices(product):
     return verts
 def get_bbox(product):
     verts = get_vertices(product)
-    minv = verts.min(axis=0)  # [min_x, min_y, min_z]
-    maxv = verts.max(axis=0)  # [max_x, max_y, max_z]
+    minv = verts.min(axis=0)  
+    maxv = verts.max(axis=0)  
     return minv, maxv
 def get_door_midpoint(door):
     minv, maxv = get_bbox(door)
     mid = (minv + maxv) / 2.0
-    return mid  # np.array([x, y, z])
+    return mid  
 
-space_boxes = {}  # key: IfcSpace, value: (minv, maxv)
+space_boxes = {}  
 
 for sp in spaces:
     try:
@@ -175,11 +204,16 @@ def point_in_box(point, minv, maxv, margin=-0.5):
         (minv[2] + margin) <= point[2] <= (maxv[2] - margin)
     )
 
+#COMMENTS 
+#here we make a box around each space using its bounding box
+#then we check if the IfcDoor midpoint is inside any of these boxes
+#the margin is set to -0.5 so the box is bigger than the IfcSPace and finds the doors 
+#the -0.5 margin is in meters (500mm)
+#Spaceboxes is a dictionary instead of a list to map spaces to their bounding boxes
 
-##################### DOOR TO SPACE MAPPING #######################
+
+##################### SPACES WITH DOORS DIVIDE BY NO DESKS  #######################
 space_to_doors = defaultdict(list)
-
-# door -> space (if you want reverse mapping)
 door_to_space = {}
 
 for door in doors:
@@ -199,7 +233,7 @@ for door in doors:
             break
 
     if assigned_space is None:
-        # Midpoint not inside/close to any IfcSpace
+        #Check if midpoint not inside/close to any IfcSpace printed in termenal
         print(f"Door {door.GlobalId} is not inside any IfcSpace (by midpoint).")
 
 
@@ -233,29 +267,79 @@ for sp, doors_in_space in space_to_doors.items():
 
 ############### CALL JSON GUIDELINES FILE #################
 guidelines = {}
-with open("A2/guide.json") as file:
+with open("A3/guide.json") as file:
     guidelines = json.load(file)
 
 
 ################### TEXT FILE GENERATION ##########################
 
-with open("A2/A2_analyst_checks_GRP2.txt", "w") as f:
+with open("A3/A3_analyst_checks_GRP2.txt", "w") as f:
     for line in guidelines["guidelines"]:
         f.write(line)
 
 
-##################### DESK QUANTITIES AND DIMENSIONS ###########################
+##################### CALL FUNCTIONS ###########################
 
-    #call the function 
-    no_of_desks_in_space(spaces)
+    #call the function s
+    desks_in_spaces_count = no_of_desks_in_space(spaces)
     #call the function again without appending to deskSpaces. Because there are desks outside of spaces in the model!
-    no_of_desks_in_space(storey, False)
+    desks_outside_spaces_count = no_of_desks_in_space(storey, False)
     pset_for_desk_spaces()
 
 
 
 
 
+
+
+
+def make_plots():
+    # use the global stats already computed
+    global desks_in_spaces_count, desks_outside_spaces_count
+    global desks_per_level, desks_area_7_or_below, desks_area_above_7
+
+    desks_in_spaces = desks_in_spaces_count
+    desks_outside_spaces = desks_outside_spaces_count
+
+    # 1) Pie chart: desks in spaces vs outside spaces
+    plt.figure()
+    plt.title("Desks in spaces vs outside spaces")
+    plt.pie(
+        [desks_in_spaces, desks_outside_spaces],
+        labels=["In spaces", "Outside spaces"],
+        autopct="%1.1f%%",
+        startangle=90,
+    )
+    plt.axis("equal")
+    plt.savefig("A3/plot_desks_in_vs_out.png", dpi=200, bbox_inches="tight")
+
+    # 2) Bar chart: desks in spaces per level
+    levels = list(desks_per_level.keys())
+    counts = [desks_per_level[lvl] for lvl in levels]
+
+    plt.figure()
+    plt.bar(levels, counts)
+    plt.xlabel("Level")
+    plt.ylabel("Number of desks in spaces")
+    plt.title("Desks in spaces per level")
+    plt.savefig("A3/plot_desks_per_level.png", dpi=200, bbox_inches="tight")
+
+    # 3) Area per desk distribution (≤ 7 m² vs > 7 m²)
+    plt.figure()
+    plt.bar(["≤ 7 m²", "> 7 m²"], [desks_area_7_or_below, desks_area_above_7])
+    plt.ylabel("Number of desks")
+    plt.title("Area per desk distribution")
+    plt.savefig("A3/plot_area_per_desk.png", dpi=200, bbox_inches="tight")
+
+    print("Plots saved to:")
+    print("  A3/plot_desks_in_vs_out.png")
+    print("  A3/plot_desks_per_level.png")
+    print("  A3/plot_area_per_desk.png")
+
+
+
+make_plots()
+    
 
 
 
