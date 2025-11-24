@@ -637,3 +637,195 @@ Space: Student space:2238662
   - No. of doors: 0
   - Total door width (internal): 0.0 cm
   - Desk to door width ratio: 0.0 cm
+
+
+==================== SPACES WITH NO DESKS ====================
+  - Auditorium:1133158
+  - Hallway:1133161
+  - Elevator:1133167
+  - Toilets:1133170
+  - Cafe kitchen:1133173
+  - Hallway:1133176
+  - Tech:1133179
+  - Meeting room:1133182
+  - Printer room:1133188
+  - Meeting room:1133191
+  - Meeting room:1133194
+  - Hallway:1133209
+  - Hallway:1133213
+  - Elevator:1147518
+  - Rescue elevator:1150421
+  - Rescue elevator:1151860
+  - Meeting room:1157884
+  - Hallway:1157887
+  - Meeting room:1158161
+  - Meeting room:1158164
+  - Hallway:1158176
+  - Hallway:1158179
+  - Toilets:1158182
+  - Kitchen:1158185
+  - Stair:1158188
+  - Atrium:1158486
+  - Kitchen:1216957
+  - Tech:1216982
+  - Meeting room:1217036
+  - Meeting room:1217039
+  - Printer room:1217042
+  - Meeting room:1217090
+  - Tech:1217093
+  - Meeting room:1217099
+  - Stair:1217158
+  - Toilets:1217165
+  - Rescue elevator:1217178
+  - Atrium:1218068
+  - Stair:1218075
+  - Stair:1219983
+  - Atrium:1219989
+  - Hallway:1220218
+  - Rescue elevator:1220221
+  - Meeting room:1220224
+  - Meeting room:1220227
+  - Toilets:1220239
+  - Kitchen:1220242
+  - Meeting room:1220245
+  - Meeting room:1220248
+  - Meeting room:1220251
+  - Meeting room:1222014
+  - Tech:1222017
+  - Tech:1222333
+  - Tech:1222626
+  - Tech:1222783
+  - Meeting room:1228962
+  - Rescue elevator:1228965
+  - Toilets:1228971
+  - Kitchen:1228974
+  - Tech:1228986
+  - Meeting room:1228992
+  - Meeting room:1229001
+  - Meeting room:1229013
+  - Meeting room:1229016
+  - Elevator:1317401
+  - Hallway:1317689
+  - Hallway:1319242
+  - Elevator:1319254
+  - Atrium:1319636
+  - Hallway:1320061
+  - Elevator:1320064
+  - Hallway:1320448
+  - Elevator:1320451
+  - Hallway:1573335
+  - Hallway:1574774
+  - Hallway:1575031
+  - Hallway:1576306
+  - Café desk:1580301
+  - Sofa area:1580304
+  - Materials library:1580334
+  - Sofa area:1580343
+  - Sofa area:1580763
+  - Hallway:1582548
+  - Office:1582577
+  - Sofa area:1582611
+  - Hallway:2234384
+  - Sofa area:2234411
+
+
+================ DESKS NOT IN ANY 'IfcSpace' ================
+  - Desk: 1212429  (GlobalId: 2dRl5W5bT2a9_2uqp0ea57)
+  - Desk: 1212430  (GlobalId: 2dRl5W5bT2a9_2uqp0ea56)
+  - Desk: 1212431  (GlobalId: 2dRl5W5bT2a9_2uqp0ea51)
+  - Desk: 1212432  (GlobalId: 2dRl5W5bT2a9_2uqp0ea50)
+  - Desk: 1212433  (GlobalId: 2dRl5W5bT2a9_2uqp0ea53)
+  - Desk: 1212434  (GlobalId: 2dRl5W5bT2a9_2uqp0ea52)
+  - Desk: 1212435  (GlobalId: 2dRl5W5bT2a9_2uqp0ea5D)
+  - Desk: 1212436  (GlobalId: 2dRl5W5bT2a9_2uqp0ea5C)
+  - Desk: 1212437  (GlobalId: 2dRl5W5bT2a9_2uqp0ea5F)
+  - Desk: 1212438  (GlobalId: 2dRl5W5bT2a9_2uqp0ea5E)
+  - Desk: 1212442  (GlobalId: 2dRl5W5bT2a9_2uqp0ehxz)
+  - Desk: 1212443  (GlobalId: 2dRl5W5bT2a9_2uqp0ehxy)
+  - Desk: 1212444  (GlobalId: 2dRl5W5bT2a9_2uqp0ehx$)
+  - Desk: 1212445  (GlobalId: 2dRl5W5bT2a9_2uqp0ehx_)
+  - Desk: 1212446  (GlobalId: 2dRl5W5bT2a9_2uqp0ehxv)
+  - Desk: 1212447  (GlobalId: 2dRl5W5bT2a9_2uqp0ehxu)
+  - Desk: 1212448  (GlobalId: 2dRl5W5bT2a9_2uqp0ehxx)
+  - Desk: 1212449  (GlobalId: 2dRl5W5bT2a9_2uqp0ehxw)
+  - Desk: 1212450  (GlobalId: 2dRl5W5bT2a9_2uqp0ehxb)
+  - Desk: 1212451  (GlobalId: 2dRl5W5bT2a9_2uqp0ehxa)
+  - Desk: 1212505  (GlobalId: 2dRl5W5bT2a9_2uqp0ehwi)
+  - Desk: 1212506  (GlobalId: 2dRl5W5bT2a9_2uqp0ehwl)
+  - Desk: 1212507  (GlobalId: 2dRl5W5bT2a9_2uqp0ehwk)
+  - Desk: 1212508  (GlobalId: 2dRl5W5bT2a9_2uqp0ehwf)
+  - Desk: 1212509  (GlobalId: 2dRl5W5bT2a9_2uqp0ehwe)
+  - Desk: 1212599  (GlobalId: 2dRl5W5bT2a9_2uqp0ehv2)
+  - Desk: 1212600  (GlobalId: 2dRl5W5bT2a9_2uqp0ehvD)
+  - Desk: 1212601  (GlobalId: 2dRl5W5bT2a9_2uqp0ehvC)
+  - Desk: 1212602  (GlobalId: 2dRl5W5bT2a9_2uqp0ehvF)
+  - Desk: 1212603  (GlobalId: 2dRl5W5bT2a9_2uqp0ehvE)
+  - Desk: 1212604  (GlobalId: 2dRl5W5bT2a9_2uqp0ehv9)
+  - Desk: 1212605  (GlobalId: 2dRl5W5bT2a9_2uqp0ehv8)
+  - Desk: 1212606  (GlobalId: 2dRl5W5bT2a9_2uqp0ehvB)
+  - Desk: 1212607  (GlobalId: 2dRl5W5bT2a9_2uqp0ehvA)
+  - Desk: 1212608  (GlobalId: 2dRl5W5bT2a9_2uqp0ehur)
+  - Desk: 1212737  (GlobalId: 2dRl5W5bT2a9_2uqp0eh_q)
+  - Desk: 1212738  (GlobalId: 2dRl5W5bT2a9_2uqp0eh_t)
+  - Desk: 1212739  (GlobalId: 2dRl5W5bT2a9_2uqp0eh_s)
+  - Desk: 1212740  (GlobalId: 2dRl5W5bT2a9_2uqp0eh_n)
+  - Desk: 1212741  (GlobalId: 2dRl5W5bT2a9_2uqp0eh_m)
+  - Desk: 1212805  (GlobalId: 2dRl5W5bT2a9_2uqp0ehzm)
+  - Desk: 1212806  (GlobalId: 2dRl5W5bT2a9_2uqp0ehzp)
+  - Desk: 1212807  (GlobalId: 2dRl5W5bT2a9_2uqp0ehzo)
+  - Desk: 1212808  (GlobalId: 2dRl5W5bT2a9_2uqp0ehzz)
+  - Desk: 1212809  (GlobalId: 2dRl5W5bT2a9_2uqp0ehzy)
+  - Desk: 1212810  (GlobalId: 2dRl5W5bT2a9_2uqp0ehz$)
+  - Desk: 1212811  (GlobalId: 2dRl5W5bT2a9_2uqp0ehz_)
+  - Desk: 1212812  (GlobalId: 2dRl5W5bT2a9_2uqp0ehzv)
+  - Desk: 1212873  (GlobalId: 2dRl5W5bT2a9_2uqp0ehyy)
+  - Desk: 1212874  (GlobalId: 2dRl5W5bT2a9_2uqp0ehy$)
+  - Desk: 1212875  (GlobalId: 2dRl5W5bT2a9_2uqp0ehy_)
+  - Desk: 1212876  (GlobalId: 2dRl5W5bT2a9_2uqp0ehyv)
+  - Desk: 1212877  (GlobalId: 2dRl5W5bT2a9_2uqp0ehyu)
+  - Desk: 1212878  (GlobalId: 2dRl5W5bT2a9_2uqp0ehyx)
+  - Desk: 1212879  (GlobalId: 2dRl5W5bT2a9_2uqp0ehyw)
+  - Desk: 1212880  (GlobalId: 2dRl5W5bT2a9_2uqp0ehyb)
+  - Desk: 1212939  (GlobalId: 2dRl5W5bT2a9_2uqp0ehp_)
+  - Desk: 1212940  (GlobalId: 2dRl5W5bT2a9_2uqp0ehpv)
+  - Desk: 1212941  (GlobalId: 2dRl5W5bT2a9_2uqp0ehpu)
+  - Desk: 1212942  (GlobalId: 2dRl5W5bT2a9_2uqp0ehpx)
+  - Desk: 1212943  (GlobalId: 2dRl5W5bT2a9_2uqp0ehpw)
+  - Desk: 1212944  (GlobalId: 2dRl5W5bT2a9_2uqp0ehpb)
+  - Desk: 1212945  (GlobalId: 2dRl5W5bT2a9_2uqp0ehpa)
+  - Desk: 1212946  (GlobalId: 2dRl5W5bT2a9_2uqp0ehpd)
+  - Desk: 1215133  (GlobalId: 2dRl5W5bT2a9_2uqp0ehHe)
+  - Desk: 1215134  (GlobalId: 2dRl5W5bT2a9_2uqp0ehHh)
+  - Desk: 1215135  (GlobalId: 2dRl5W5bT2a9_2uqp0ehHg)
+  - Desk: 1215136  (GlobalId: 2dRl5W5bT2a9_2uqp0ehHL)
+  - Desk: 1215137  (GlobalId: 2dRl5W5bT2a9_2uqp0ehHK)
+  - Desk: 1215138  (GlobalId: 2dRl5W5bT2a9_2uqp0ehHN)
+  - Desk: 1481512  (GlobalId: 3$f6LDA5v8iPfn0U1iMy7T)
+  - Desk: 1481711  (GlobalId: 3$f6LDA5v8iPfn0U1iMy1_)
+  - Desk: 1481712  (GlobalId: 3$f6LDA5v8iPfn0U1iMy1X)
+  - Desk: 1481713  (GlobalId: 3$f6LDA5v8iPfn0U1iMy1W)
+  - Desk: 1481714  (GlobalId: 3$f6LDA5v8iPfn0U1iMy1Z)
+  - Desk: 1481715  (GlobalId: 3$f6LDA5v8iPfn0U1iMy1Y)
+  - Desk: 1481716  (GlobalId: 3$f6LDA5v8iPfn0U1iMy1b)
+  - Desk: 1482312  (GlobalId: 3$f6LDA5v8iPfn0U1iMyNP)
+  - Desk: 1482313  (GlobalId: 3$f6LDA5v8iPfn0U1iMyNO)
+  - Desk: 1482314  (GlobalId: 3$f6LDA5v8iPfn0U1iMyNR)
+  - Desk: 1482315  (GlobalId: 3$f6LDA5v8iPfn0U1iMyNQ)
+  - Desk: 1482837  (GlobalId: 3$f6LDA5v8iPfn0U1iM$l4)
+  - Desk: 1482838  (GlobalId: 3$f6LDA5v8iPfn0U1iM$l7)
+  - Desk: 1482839  (GlobalId: 3$f6LDA5v8iPfn0U1iM$l6)
+  - Desk: 1482840  (GlobalId: 3$f6LDA5v8iPfn0U1iM$l9)
+  - Desk: 1482841  (GlobalId: 3$f6LDA5v8iPfn0U1iM$l8)
+  - Desk: 1482842  (GlobalId: 3$f6LDA5v8iPfn0U1iM$lB)
+  - Desk: 1483165  (GlobalId: 3$f6LDA5v8iPfn0U1iM$eC)
+  - Desk: 1581527  (GlobalId: 15_kkT3lf2ePzBHG_qJYY_)
+  - Desk: 2245375  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQc)
+  - Desk: 2245376  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQX)
+  - Desk: 2245377  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQW)
+  - Desk: 2245378  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQZ)
+  - Desk: 2245379  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQY)
+  - Desk: 2245380  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQj)
+  - Desk: 2245381  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQi)
+  - Desk: 2245382  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQl)
+  - Desk: 2245383  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQk)
+  - Desk: 2245384  (GlobalId: 2E9fNU8q1C1gA_wzcoXxQf)

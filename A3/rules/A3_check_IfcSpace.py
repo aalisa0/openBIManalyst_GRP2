@@ -265,6 +265,50 @@ for sp, doors_in_space in space_to_doors.items():
         print(f'  → Safety check (cm door width per desk): {fireSafety_numberdesks_widthdoor} mm')
 
 
+def report_spaces_without_desks(f, spaces, deskSpaces):
+    spaces_with_desks = set(deskSpaces)
+    spaces_without_desks = [sp for sp in spaces if sp not in spaces_with_desks]
+
+    f.write("\n\n==================== SPACES WITH NO DESKS ====================\n")
+    if spaces_without_desks:
+        for sp in spaces_without_desks:
+            f.write(f"  - {sp.Name or sp.GlobalId}\n")
+    else:
+        f.write("  All spaces have at least one desk.\n")
+
+
+def report_desks_without_spaces(f, model, deskSpaces):
+    all_desks = []
+    for elem in model.by_type("IfcBuildingElementProxy"):
+        if is_desk(elem):
+            all_desks.append(elem)
+    for elem in model.by_type("IfcFurniture"):
+        if is_desk(elem):
+            all_desks.append(elem)
+
+    desks_in_spaces = set()
+    for sp in deskSpaces:
+        for rel in model.get_inverse(sp):
+            if rel.is_a("IfcRelContainedInSpatialStructure"):
+                for element in rel.RelatedElements:
+                    if is_desk(element):
+                        desks_in_spaces.add(element)
+
+    # desks in model but not in any space
+    desks_without_space = [d for d in all_desks if d not in desks_in_spaces]
+
+    f.write("\n\n================ DESKS NOT IN ANY 'IfcSpace' ================\n")
+    if desks_without_space:
+        for d in desks_without_space:
+            desk_name = d.Tag or d.Name or d.ObjectType or "Unknown"
+            desk_id = d.GlobalId
+
+            f.write(f"  - Desk: {desk_name}  (GlobalId: {desk_id})\n")
+
+    else:
+        f.write("  All desks are assigned to a space.\n")
+
+
 
 ############# MAKE SURE THAT THERE IS A FOLDER FOR THE TXT FILE ##############
 os.makedirs("A3", exist_ok=True)
@@ -288,6 +332,8 @@ with open("A3/A3_analyst_checks_GRP2.txt", "w") as f:
     #call the function again without appending to deskSpaces. Because there are desks outside of spaces in the model!
     desks_outside_spaces_count = no_of_desks_in_space(storey, False)
     pset_for_desk_spaces()
+    report_spaces_without_desks(f, spaces, deskSpaces)
+    report_desks_without_spaces(f, model, deskSpaces)
 
 ##################### MAKE PLOTS ###########################
 
