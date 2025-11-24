@@ -386,8 +386,44 @@ def make_plots():
     print("  A3/plot_area_per_desk.png")
 
 make_plots()
-    
+#################### LLIST OF VARIABLES FOR FURTHERER TESTING PURPOSES ###########################    
+#pattern
+#list_of_ifc_files
+#modelChoice
+#model
 
+#spaces
+#doors
+#storey
+
+#deskSpaces
+#desks_in_spaces_count
+#desks_outside_spaces_count
+#desks_per_level
+#desks_area_above_7
+#desks_area_7_or_below
+
+#space_boxes
+#space_to_doors
+#door_to_space
+
+#guidelines
+#f  # file handle for output txt
+
+#levels
+#counts
+
+#all_desks
+#desks_in_spaces
+#desks_without_space
+
+#desk_name
+#desk_id
+
+#mid
+#assigned_space
+
+#settings
 #################### END OF SCRIPT ###########################
 
 
