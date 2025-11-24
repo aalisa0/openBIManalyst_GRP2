@@ -368,7 +368,7 @@ def make_plots():
     plt.title("Desks in spaces per level")
     plt.savefig("A3/plot_desks_per_level.png", dpi=200, bbox_inches="tight")
 
-    # 3) Floor area per desk distribution (≤ 7 m2 vs > 7 ,2)
+    # 3) Floor area per desk distribution (< 7 m2 vs ≥ 7 ,2)
     plt.figure()
     plt.title("Floor area per desk ≤ 7 m2 vs > 7 m2")
     plt.pie(
