@@ -424,6 +424,22 @@ make_plots()
 #assigned_space
 
 #settings
+################### USER DISCRETION ##########################
+
+#doors are found by midpoint and bbox with a margin
+# so if a random toilet door is close it may be couted as an exit
+
+#many elements are named differently and catagorised 
+
+#some spaces/rooms are split up into multiple IfcSpaces
+
+#all desks are not in IfcFurniture but IfcBuildingElementProxy
+
+#all the desks have no 'length' dimension in pseet because they are classified wrongly
+
+#some of the tags are not searchable in'blender' but others are 
+
+
 #################### END OF SCRIPT ###########################
 
 
