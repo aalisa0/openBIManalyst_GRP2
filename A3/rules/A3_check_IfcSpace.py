@@ -127,14 +127,14 @@ def pset_for_desk_spaces():
             dimensions = psets['Dimensions']
             height = dimensions.get('Unbounded Height', 'N/A')
             floor_area = dimensions.get('Area', 'N/A')
-            if isinstance(floor_area, (int, float)) and desk_count > 0 and isinstance(height, (int, float)):  # <<< NEW safety
+            if isinstance(floor_area, (int, float)) and desk_count > 0 and isinstance(height, (int, float)):  
                 floor_area_desk = floor_area / desk_count
                 volume_per_desk = height * floor_area_desk
                 floor = constraints.get('Level', 'Unknown')
-                desks_per_level[floor] += desk_count  # <<< NEW
+                desks_per_level[floor] += desk_count  
 
                 # area per desk statistics (for > 7 m²)
-                if floor_area_desk > 7:              # <<< NEW
+                if floor_area_desk >= 7:              
                     desks_area_above_7 += desk_count
                 else:
                     desks_area_7_or_below += desk_count
@@ -373,7 +373,7 @@ def make_plots():
     plt.title("Floor area per desk ≤ 7 m2 vs > 7 m2")
     plt.pie(
         [desks_area_7_or_below, desks_area_above_7], 
-        labels = ["≤ 7 m²", "> 7 m²"],
+        labels = ["< 7 m²", "≥7 m²"],
         autopct="%1.1f%%",
         startangle=90,
     )
