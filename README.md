@@ -11,6 +11,11 @@ A2: The chosen use case is to verify whether the desk space in each room is comp
 
 Here we check if the the office spaces (IfcSpace) are in accordance to BR18 and 'Arbejdstilsynet' the governmental body regulating working spaces.
 
-See the 'A2/rules/A2_check_space.py' for code 
+See the 'A2' folder for diagram of what will be analysed 
 
-See the 'A2_analyst_checks_GRP2.txt' for results 
+A3: Code to verify whether the desk space in each room is compliant as shown in A2, using the Building2516 (ARCH-25-16-D). 
+
+See the 'A3/rules/A3_check_IfcSpace.py' for code 
+
+See the 'A3/A3_analyst_checks_GRP2.txt' and the diagrams for results  
+
