@@ -7,6 +7,7 @@ from collections import defaultdict
 import numpy as np
 import json
 import matplotlib.pyplot as plt
+import os
 #import pandas as pd
 
 
@@ -265,6 +266,10 @@ for sp, doors_in_space in space_to_doors.items():
 
 
 
+############# MAKE SURE THAT THERE IS A FOLDER FOR THE TXT FILE ##############
+os.makedirs("A3", exist_ok=True)
+
+
 ############### CALL JSON GUIDELINES FILE #################
 guidelines = {}
 with open("A3/guide.json") as file:
@@ -272,15 +277,13 @@ with open("A3/guide.json") as file:
 
 
 ################### TEXT FILE GENERATION ##########################
-
 with open("A3/A3_analyst_checks_GRP2.txt", "w") as f:
     for line in guidelines["guidelines"]:
         f.write(line)
 
 
 ##################### CALL FUNCTIONS ###########################
-
-    #call the function s
+    #call the function
     desks_in_spaces_count = no_of_desks_in_space(spaces)
     #call the function again without appending to deskSpaces. Because there are desks outside of spaces in the model!
     desks_outside_spaces_count = no_of_desks_in_space(storey, False)

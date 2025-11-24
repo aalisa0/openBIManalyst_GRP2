@@ -7,6 +7,10 @@ Guidelines from Arbejdstilsynet:
  - Length of desks should be 117 cm.
  - Link to guidelines: https://regler.at.dk/at-vejledninger/arbejdspladsens-indretning-inventar-a-1-15/ 
 
+Also for some guidelines I have used BR18 as reference.
+ - There should at least 1 cm of door width per occupant/ per desk
+ - Link to BR18: https://bygningsreglementet.dk/ 
+
 Total of desks in spaces: 321
 Total of desks outside spaces: 99
 
