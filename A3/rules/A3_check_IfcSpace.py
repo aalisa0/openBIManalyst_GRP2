@@ -370,7 +370,7 @@ def make_plots():
 
     # 3) Floor area per desk distribution (< 7 m2 vs ≥ 7 ,2)
     plt.figure()
-    plt.title("Floor area per desk ≤ 7 m2 vs > 7 m2")
+    plt.title("Floor area per desk < 7 m2 vs ≥ 7 m2")
     plt.pie(
         [desks_area_7_or_below, desks_area_above_7], 
         labels = ["< 7 m²", "≥7 m²"],
