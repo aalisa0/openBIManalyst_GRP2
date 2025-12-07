@@ -48,7 +48,7 @@ Using python, bonsai and ifcopenshell, and a given BIM model the code from A3 ca
 See 'A5' file for reflections on the developed code of checking desks in IfcSpace and groupwork.  
 
 
-## Written tutorial for A3 code:
+## Written tutorial for A3 code
 
 
 Part A. What this script does
