@@ -32,7 +32,8 @@ See the 'A3/A3_analyst_checks_GRP2.txt' and the diagrams for results
 
 
 ## A4
-Video and written tutorial below on how to use the code from A3
+Video and written tutorial below on how to use the code from A3. 
+The video can be found in the A3 folder as the only .mp4 file
 
 
 ## Summary 
