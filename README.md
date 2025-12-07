@@ -31,7 +31,7 @@ See the 'A3/rules/A3_check_IfcSpace.py' for code and furthere down in the README
 See the 'A3/A3_analyst_checks_GRP2.txt' and the diagrams for results  
 
 
-## A4: 
+## A4
 Video and written tutorial below on how to use the code from A3
 
 
@@ -43,7 +43,7 @@ Category: Architectural
 Description: This tutorial helps with identifying, locating, listing and verifying building elements for desks in IfcSpaces spefically. 
 Using python, bonsai and ifcopenshell, and a given BIM model the code from A3 can find misplaced desks and check compliance following BR18 and 'Arbejdstilsynet' the governmental body regulating working spaces. The results are then presented in a seperate .txt file for futherer analysis. 
 
-## A5: Reflections
+## A5 Reflections
 
 See 'A5' file for reflections on the developed code of checking desks in IfcSpace and groupwork.  
 
