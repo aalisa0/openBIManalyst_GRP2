@@ -39,6 +39,21 @@ Category: Architectural
 Description: This tutorial helps with identifying, locating, listing and verifying building elements for desks in IfcSpaces spefically. 
 Using python, bonsai and ifcopenshell, and a given BIM model the code from A3 can find misplaced desks and check compliance following BR18 and 'Arbejdstilsynet' the governmental body regulating working spaces. The results are then presented in a seperate .txt file for futherer analysis. 
 
+## A5: Reflections
+
+See 'A5' folder for the same text. 
+
+The tool I developed is a desk-checking tool based on criteria from ‘Arbejdstilsynet’, the Danish regulatory authority for workplace environments.
+The use case we created in A2 was admittedly chosen in a bit of a panic. Still, despite that, the tool ultimately works quite well and checks exactly what I intended it to.
+However, the code has become very specific to this particular model. Instead of functioning as a universal desk-finding tool for any possible IFC model, it only works reliably with this one (25-16-D-ARCH.ifc), which is unfortunate.
+There are several uncertainties. For example, the margin of the bounding box is set to 0,5 m, but if another door is close by and not actually an exit, the tool might misidentify it. It’s also necessary to be careful with bounding boxes, bbox, in general, as a flat virtual square can appear as a diamond depending on its orientation however I use it in a 3D dimension ‘IfcSpace’, so that should not be a problem, but for father studies I will try to remember that. 
+Many of the limitations comes from the model itself as well as the structure of my code. I wish I had designed the code with more interchangeable variables, for instance, to check chairs or windows, so it could be reused more flexibly.
+That said, the tool is very useful in the B-stage and for iterating or counting desks throughout the project.
+As for openBIM, I originally expected it to play only a small role in my academic future. However, after the guest lecture about two weeks ago, I am now certain that in my career, at some point, will be connected to openBIM.
+
+Group reflections:
+The GitHub collaboration was a less integrated which is a shame because I think I will definitely use it in the future. 
+
 
 ## Written tutorial for A3 code:
 
